@@ -1,4 +1,4 @@
-import { defineConfig, tierPresets } from 'sponsorkit'
+import { defineConfig, tierPresets, fetchSponsors, Sponsorship } from 'sponsorkit'
 
 export default defineConfig({
   formats: ['svg', 'png', 'json'],
@@ -6,6 +6,35 @@ export default defineConfig({
   afdian: {
     exechangeRate: 6.8,
   },
+
+  github: {
+    login: 'LittleSound',
+    token: process.env.SPONSORKIT_GITHUB_TOKEN_LITTLESOUND,
+  },
+
+  async onSponsorsAllFetched(sponsors) {
+    const res = await fetchSponsors({
+      github: {
+        login: 'nekomeowww',
+        token: process.env.SPONSORKIT_GITHUB_TOKEN_NEKOMEOWWW,
+      },
+    })
+
+    sponsors.push(...res)
+
+    const sponsorMap = new Map<string, Sponsorship>()
+    for (const sponsor of sponsors) {
+      const key = sponsor.sponsor.login || Math.random().toString()
+      const theSame = sponsorMap.get(key)
+      if (theSame) {
+        theSame.monthlyDollars += sponsor.monthlyDollars
+      } else {
+        sponsorMap.set(key, sponsor)
+      }
+    }
+    return Array.from(sponsorMap.values())
+  },
+
   tiers: [
     {
       title: 'Past Sponsors',

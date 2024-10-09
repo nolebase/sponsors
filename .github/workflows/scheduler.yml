@@ -30,10 +30,8 @@ jobs:
       - name: Update sponsors
         run: pnpm exec sponsorkit --dir .
         env:
-          SPONSORKIT_GITHUB_LOGIN: LittleSound
-          SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
-          # SPONSORKIT_AFDIAN_USER_ID: ${{ secrets.SPONSORKIT_AFDIAN_USER_ID }}
-          # SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
+          SPONSORKIT_GITHUB_TOKEN_LITTLESOUND: ${{ secrets.SPONSORKIT_GITHUB_TOKEN_LITTLESOUND }}
+          SPONSORKIT_GITHUB_TOKEN_NEKOMEOWWW: ${{ secrets.SPONSORKIT_GITHUB_TOKEN_NEKOMEOWWW }}
 
       - name: Commit
         uses: EndBug/add-and-commit@v9
