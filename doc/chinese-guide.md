@@ -1,4 +1,4 @@
-# 💖 赞助小音！
+# 💖 赞助我们！
 
 ## 通过 GitHub Sponsor 赞助
 
@@ -49,13 +49,13 @@
 
 ## 通过 Stripe 赞助
 
-如果您无法使用 GitHub Sponsor，可以通过 Stripe 赞助我。支持各种银行卡与支付宝。
+如果您无法使用 GitHub Sponsor，可以通过 Stripe 赞助我们。支持各种银行卡与支付宝。
 
 https://donate.stripe.com/xxx
 
 ## 通过爱发电赞助
 
-如果您无法使用 GitHub Sponsor，可以通过爱发电赞助我。
+如果您无法使用 GitHub Sponsor，可以通过爱发电赞助我们。
 
 https://afdian.com/a/xxx
 
@@ -67,4 +67,4 @@ Ethereum, Polygon: [xxx.eth](https://etherscan.io/address/xxx)
 
 ---
 
-如遇问题，请直接[联系](mailto:rizumu@ayaka.moe)我。
+如遇问题，请直接联系 [Rizumu](mailto:rizumu@ayaka.moe) 或者 [Neko](mailto:neko@ayaka.moe)。
